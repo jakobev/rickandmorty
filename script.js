@@ -16,7 +16,7 @@ var frameDiv = document.getElementById("s2");
 var i;
 var idList = [];
 $(function(){
-	for (i = 0; i < 13; i++){
+	for (i = 0; i < 11; i++){
 	console.log("lol");
 	var button = document.createElement("button");
 	button.classList.add("btn");
