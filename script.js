@@ -50,7 +50,7 @@ $(function(){
 	var btn9 = document.getElementById("9");
 	var btn10 = document.getElementById("10");
 	var btn11 = document.getElementById("11");
-	var btn12 = document.getElementById("12");
+	
 	btn1.onclick = function(){
 		var frame = document.getElementById("frame"+btn1.id);
 		frame.style.display = "flex";
@@ -95,8 +95,5 @@ $(function(){
 		var frame = document.getElementById("frame"+btn11.id);
 		frame.style.display = "flex";
 }
-	btn12.onclick = function(){
-		var frame = document.getElementById("frame"+btn12.id);
-		frame.style.display = "flex";
-}
+	
 });
