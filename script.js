@@ -54,46 +54,67 @@ $(function(){
 	btn1.onclick = function(){
 		var frame = document.getElementById("frame"+btn1.id);
 		frame.style.display = "flex";
+		hideOtherFrames("frame1");
 }
 	btn2.onclick = function(){
 		var frame = document.getElementById("frame"+btn2.id);
 		frame.style.display = "flex";
+		hideOtherFrames("frame2");
 }
 	btn3.onclick = function(){
 		var frame = document.getElementById("frame"+btn3.id);
 		frame.style.display = "flex";
+		hideOtherFrames("frame3");
 }
 	btn4.onclick = function(){
 		var frame = document.getElementById("frame"+btn4.id);
 		frame.style.display = "flex";
+		hideOtherFrames("frame4");
 }
 	btn5.onclick = function(){
 		var frame = document.getElementById("frame"+btn5.id);
 		frame.style.display = "flex";
+		hideOtherFrames("frame5");
 }
 	btn6.onclick = function(){
 		var frame = document.getElementById("frame"+btn6.id);
 		frame.style.display = "flex";
+		hideOtherFrames("frame6");
 }
 	btn7.onclick = function(){
 		var frame = document.getElementById("frame"+btn7.id);
 		frame.style.display = "flex";
+		hideOtherFrames("frame7");
 }
 	btn8.onclick = function(){
 		var frame = document.getElementById("frame"+btn8.id);
 		frame.style.display = "flex";
+		hideOtherFrames("frame8");
 }
 	btn9.onclick = function(){
 		var frame = document.getElementById("frame"+btn9.id);
 		frame.style.display = "flex";
+		hideOtherFrames("frame9");
 }
 	btn10.onclick = function(){
 		var frame = document.getElementById("frame"+btn10.id);
 		frame.style.display = "flex";
+		hideOtherFrames("frame10");
 }
 	btn11.onclick = function(){
 		var frame = document.getElementById("frame"+btn11.id);
 		frame.style.display = "flex";
+		hideOtherFrames("frame11");
 }
 	
 });
+
+function hideOtherFrames(frameId){
+	var allFrames = document.getElementsByTagName("iframe");
+		Array.from(allFrames).forEach(item =>{
+			if(item.id === frameId){
+				return;
+			}
+			item.style.display = "none";
+		})
+}
