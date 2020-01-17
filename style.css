@@ -1,6 +1,7 @@
 body{
 	background: orange;
 	width: 100%;
+	overflow-x: hidden;
 }
 .header{
 	width: 300px;
@@ -64,5 +65,6 @@ body{
 	justify-content: center;
 }
 iframe{
+	display: none;
 	margin: 10px;
 }
