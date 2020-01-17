@@ -65,6 +65,6 @@ body{
 	justify-content: center;
 }
 iframe{
-	display: none;
+	display: flex;
 	margin: 10px;
 }
